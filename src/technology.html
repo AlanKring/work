@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>首页</title>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/layui.css" rel="stylesheet"/>
+</head>
+
+<body>
+<!-- 导航条-->
+<!-- 导航搜索-->
+<div>
+    <ul class="layui-nav" id="layui-nav">
+        <li class="layui-nav-item">
+            <a href="index.html">主页<span class="layui-badge-dot layui-bg-green">66</span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="technology.html">江湖<span class="layui-badge-dot layui-bg-green"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="">旅行日志<span class="layui-badge-dot"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="">友链<span class="layui-badge-dot"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="selfResume.html">关于<span class="layui-badge-dot layui-bg-green"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="register.html">注册<span class="layui-badge">169+</span></a>
+        </li>
+    </ul>
+</div>
+
+<div class="slide-item-tablecell">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="slider-heading text-center"><h3 class="slider__title">Kevin, 完成比完美更好！</h3>
+                    <br/>
+                    <p class="ksd-product-desctext"><h4>Done is better than perfect !</h4></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr class="layui-border-orange"/>
+<div id="layoutSidenav" class="ksd-product-desctext" style="margin-right: 160px">
+    <div id="layoutSidenav_nav"></div>
+    <div id="layoutSidenav_content">
+        <main>
+            <br/>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3> Mybatis 3.5.4</h3>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <p><font size="4"><b>1.1 &nbsp;什么是Mybatis</b></font></p><br/>
+                        <img class="small mb-1" for="inputLastName" src="images/mybatis.png">
+                        <p><b>·</b>&nbsp;MyBatis 是一款优秀的持久层框架</p>
+                        <p><b>·</b>&nbsp;它支持自定义 SQL、存储过程以及高级映射。
+                        <p><b>·</b>&nbsp;MyBatis 免除了几乎所有的 JDBC 代码以及设置参数和获取结果集的工作。</p>
+                        <p><b>·</b>&nbsp;MyBatis 可以通过简单的 XML 或注解来配置和映射：原始类型、接口和 Java POJO（Plain Old Java Objects，普通老式
+                            Java
+                            对象）为数据库中的记录。</p>
+                        <p><b>·</b>&nbsp;MyBatis 本是apache的一个开源项目iBatis, 2010年这个项目由apache software foundation 迁移到了google
+                            code，并且改名为MyBatis 。</p>
+                        <p><b>·</b> &nbsp;2013年11月迁移到Github</p>
+                        <p><b>·</b>&nbsp;当前，最新版本是MyBatis 3.5.4 ，其发布时间是2020年2月4日</p>
+                    </div>
+                    <br/>
+                    <div class="table-responsive">
+                        <p><font size="4"> <b>1.2 持久化</b></font></p><br/>
+                        <p><b>数据持久化</b></p>
+                        <p> 持久化就是将程序的数据在持久状态和瞬时状态转化的过程；</p>
+                        <p>内存：断电即失；</p>
+                        <p> 数据库（JDBC），IO文件持久化；</p>
+                        <p>生活例子：冷藏. 罐头。(持久化)；</p>
+                        <p><b> 为什么需要持久化？</b></p>
+                        <p> 断电即失， 有一些对象，不能让他丢掉；</p>
+                        <p>内存太昂贵；</p>
+                        <br/>
+                        <p><font size="4"><b>1.3 持久层</b></font></p><br/>
+                        <p>Dao层，Service层，Controller层.....</p>
+                        <p>完成持久化工作的代码块；</p>
+                        <p> 层界限十分明显；</p>
+                        <br/>
+                        <p><font size="4"> <b>1.4 为什么需要Mybatis？</b></font></p><br/>
+                        <p><b> 核心作用：帮助程序猿将数据存入到数据库中。</b></p>
+                        <p> 传统的JDBC代码太复杂、简化、框架、自动化；</p>
+                        <p> 不用Mybatis也可以。学了更容易上手。技术没有高低之分；</p>
+                        <p> 层界限十分明显；</p>
+                        <br/>
+                        <p><font size="2"><b>优点</b></font></p><br/>
+                        <p> 层界限十分明显；</p>
+                        <p>简单易学：本身就很小且简单。没有任何第三方依赖，最简单安装只要两个jar文件+配置几个sql映射文件易于学习，易于使用，通过文档和源代码，可以比较完全的掌握它的设计思路和实现。</p>
+                        <p>灵活：mybatis不会对应用程序或者数据库的现有设计强加任何影响。 sql写在xml里，便于统一管理和优化。通过sql语句可以满足操作数据库的所有需求。</p>
+                        <p> sql与程序代码实现解耦合：通过提供DAO层，将业务逻辑和数据访问逻辑分离，使系统的设计更清晰，更易维护，更易单元测试。sql和代码的分离，提高了可维护性。</p>
+                        <p>提供映射标签，支持对象与数据库的orm（Object Relation Mapping）字段关系映射；</p>
+                        <p> 提供对象关系映射标签，支持对象关系组建维护；</p>
+                        <p>提供xml标签，支持编写动态sql；</p><br/>
+                        <p>------- <b>最重要的一点：使用的人多！</b>-----</p>
+                        <br/>
+                        <p>后端常用框架：Spring SpringMVC SpringBoot...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3>Spring 4.3.9 </h3>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <p><font size="4"><b>1.1 简介</b></font></p><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img class="small mb-1" for="inputLastName" src="images/spring5.jpg">
+                        <p><b>·</b>&nbsp;Spring：春天 —-> 给软件行业带来了春天！</p>
+                        <p><b>·</b>&nbsp;2002年，首次推出Spring框架的雏形：interface 21</p>
+                        <p><b>·</b>&nbsp; Spring框架即以 interface 21 框架为基础，经过重新设计，并不断丰富其内涵，于2004年3月24日，发布了1.0正式版。</p>
+                        <p><b>·</b>&nbsp; Rod Johnson ，Spring Framework创始人，著名作者。很难想象Rod
+                            Johnson的学历，真的让好多人大吃一惊，他是悉尼大学的博士，然而他的专业不是计算机，而是音乐学。</p>
+                        <p><b>·</b>&nbsp; Spring理念：使现有的技术更加容易使用，本身是一个大杂烩（内容很多），整合现有的技术框架！</p>
+                        <p><b>·</b> &nbsp;2013年11月迁移到Github</p>
+                        <p><b>·</b>&nbsp;当前，最新版本是MyBatis 3.5.4 ，其发布时间是2020年2月4日</p>
+                        <br/>
+                        <p><font size="2"><b>项目架构</b></font></p><br/>
+                        <p><b>·&nbsp; SSH： Struct2 + Spring + Hibernate （全自动化持久化框架）</b></p>
+                        <p><b>·&nbsp; SSM：SpringMVC + Spring + Mybatis（半自动化持久化框架，可定制性更高，SQL更加灵活）</b></p>
+                        <br/>
+                        <p><font size="2"><b>下载引导</b></font></p><br/>
+                        <p><b>·&nbsp;
+                            官网：https://docs.spring.io/spring/docs/current/spring-framework-reference/overview.html#overview</b>
+                        </p>
+                        <p><b>·&nbsp; 官方版本下载地址：https://repo.spring.io/release/org/springframework/spring/</b></p>
+                        <p><b>·&nbsp; Github：https://github.com/spring-projects/spring-framework/releases</b></p>
+                        <p><b>·&nbsp; Spring版本4.3.9 :
+                            https://docs.spring.io/spring-framework/docs/4.3.9.RELEASE/spring-framework-reference/html/</b>
+                        </p>
+                    </div>
+                    <br/>
+                    <div class="table-responsive">
+                        <p><font size="4"> <b> 1.2 优点</b></font></p><br/>
+                        <p>·&nbsp; Spring是一个开源的免费的框架（容器）;</p>
+                        <p>·&nbsp; Spring是一个轻量级的、非入侵式的框架 （引入后，不会对原项目产生影响）;</p>
+                        <p>·&nbsp; 控制反转（IOC），面向切面编程（AOP）（面试必问题）;</p>
+                        <p>·&nbsp; 支持事务的处理，对框架整合的支持;</p>
+                        <p>·&nbsp; 总结一句话：Spring就是一个轻量级的控制反转（IOC），和面向切面编程（AOP）的框架！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3>SpringMVC </h3>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <p><font size="4"><b>1.1 什么是MVC？</b></font></p><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <p><b>·</b>&nbsp;MVC是模型（Model）、视图（View）、控制器（Controller）的简写，是一种软件规范。</p>
+                        <p><b>·</b>&nbsp;将业务逻辑、数据、显示分离的方法来组织代码;</p>
+                        <p><b>·</b>&nbsp; MVC主要作用是降低视图与逻辑间的双向耦合;</p>
+                        <p><b>·</b>&nbsp; MVC不是一种设计模式，MVC是一种架构模式。当然不同的MVC存在差异。</p>
+                        <br/>
+                        <p><font size="2"><b>MVC解析</b></font></p><br/>
+                        <p><b>·&nbsp; Model（模型）：</b>数据模型，提供要展示的数据，因此包含数据和行为，可以认为是领域模型或JavaBean组件（包含数据和行为），不过现在一般都分离来：Value
+                            Object（数据Dao）和服务层（行为Service）。也就是模型提供了模型数据查询和模型数据的状态更新等功能，包含数据业务。
+                        </p>
+                        <p><b>·&nbsp; View（视图）：</b>负责进行模型的展示，一般就是我们见到的用户界面，客户想看到的东西（JSP）。</p>
+                        <p><b>·&nbsp; Controller(控制器)：</b>接收用户请求，委托给模型进行处理（状态改变），处理完毕后把返回的模型数据返回给视图，有视图负责展示。也就是说控制器做了个调度员的工作。
+                        </p>
+                        <p><b>&nbsp;&nbsp;&nbsp;最经典的MVC就是JSP + Service + JavaBean 的模式</b></p>
+                        <div align="center">
+                            <img class="small mb-1" for="inputLastName" src="images/1.png"
+                                 style="width: 750px; height: 450px">
+                        </div>
+                    </div>
+                    <br/>
+                    <p><font size="4"> <b> 1.2 Spring MVC特点</b></font></p><br/>
+                    <p>·&nbsp; 轻量级，简单易学</p>
+                    <p>·&nbsp; 高效，基于请求响应的MVC框架;</p>
+                    <p>·&nbsp; 与Spring兼容性好，无缝结合;</p>
+                    <p>·&nbsp; 功能强大：RestFul、数据验证、格式化、本地化、主题等;</p>
+                    <p>·&nbsp; 简洁灵活 ！</p>
+                    <p>正因为Spring MVC好，简单，便捷，易学，天生和Spring无缝集成（使用SpringIOC和Aop）</p>
+                    <p>使用约定优于配置，能够进行简单的junit测试，支持Restful风格，异常处理，本地化，国际化，数据验证，类型转换，拦截器，等等…所以我们需要学习。</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div style="margin-right: 60px;width: 400px">
+        <br/>
+        <font class="layui-timeline-title" size="4"><b> &nbsp; 深入浅出 -> SSM框架</b></font>
+        <p></p><br/>
+        <ul class="layui-timeline">
+            <li class="layui-timeline-item">
+                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                <div class="layui-timeline-content layui-text">
+                    <h3 class="layui-timeline-title">Mybatis 3.5.4</h3>
+                    <p><a href="">1.1 什么是Mybatis</a></p>
+                    <p><a href="">1.2 持久化</a></p>
+                    <p><a href="">1.3 持久层</a></p>
+                    <p><a href="">2 第一个Mybatis程序</a></p>
+                    <p><a href="">3 增删改查实现</a></p>
+                    <p><a href="">4 配置解析</a></p>
+                    <p><a href="">5 ResultMap（重点 ）</a></p>
+                    <p><a href="">6 日志</a></p>
+                    <p><a href="">7 分页</a></p>
+                    <p><a href="">8 使用注解开发</a></p>
+                    <p><a href="">9 Mybatis执行流程剖析(特重点)</a></p>
+                    <p><a href="">10 Lombok的使用</a></p>
+                    <p><a href="">11 关联查询</a></p>
+                    <p><a href="">12 动态SQL</a></p>
+                    <p><a href="">13、缓存（了解）</a></p>
+                </div>
+            </li>
+            <li class="layui-timeline-item">
+                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                <div class="layui-timeline-content layui-text">
+                    <h3 class="layui-timeline-title">Spring 4.3.9</h3>
+                    <p><a href="">1.1 简介</a></p>
+                    <p><a href="">1.2 优点</a></p>
+                    <p><a href="">2 IOC理论推导</a></p>
+                    <p><a href="">3 HelloSpring</a></p>
+                    <p><a href="">4 IOC创建对象方式</a></p>
+                    <p><a href="">5 Spring配置</a></p>
+                    <p><a href="">6 DI（依赖注入)(重点）</a></p>
+                    <p><a href="">7 Spring注解开发</a></p>
+                    <p><a href="">8 使用Java实现配置Spring（重点）</a></p>
+                    <p><a href="">9 代理模式</a></p>
+                    <p><a href="">10 AOP实现 （最重点）</a></p>
+                    <p><a href="">11 整合Mybatis</a></p>
+                    <p><a href="">12 声明式事务（重点）</a></p>
+                </div>
+            </li>
+            <li class="layui-timeline-item">
+                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                <div class="layui-timeline-content layui-text">
+                    <h3 class="layui-timeline-title">Spring MVC</h3>
+                    <p><a href="">1.1 什么是MVC？</a></p>
+                    <p><a href="">1.2 Spring MVC特点</a></p>
+                    <p><a href="">1.3 HelloSpring MVC</a></p>
+                    <p><a href="">1.4 中心控制器</a></p>
+                    <p><a href="">2.1 SpringMVC执行原理（重点）</a></p>
+                    <p><a href="">3. 使用注解开发SpringMVC</a></p>
+                    <p><a href="">4. RestFull风格讲解</a></p>
+                    <p><a href="">5. 接请求参数及数据回显</a></p>
+                </div>
+            </li>
+            <li class="layui-timeline-item">
+                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                <div class="layui-timeline-content layui-text">
+                    <div class="layui-timeline-title">过去</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<footer class="py-4 bg-light footer-self ">
+    <a>关于我们</a>
+    <span class="pipe">|</span>
+    <a>联系我们</a>
+    <span class="pipe">|</span>
+    <a>法律声明</a></nav>
+    <p>Copyright &copy;2020 即使再小的帆也能远航！ <br>
+        <a>京ICP备 1000000号</a>
+    </p>
+    </div>
+    </div>
+</footer>
+</body>
+</html>

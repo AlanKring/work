@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>首页</title>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/layui.css" rel="stylesheet"/>
+    <script src="css/layui.js"></script>
+    <script type="text/javascript">
+        layui.use('carousel', function () {
+            var carousel = layui.carousel;
+            var ins=carousel.render({
+                elem: '#test1'
+                , width: '100%'      //设置容器宽度
+                , height:'100%'
+                , arrow: 'always'    //始终显示箭头，可选hover,none
+                ,anim: 'fade'    //切换动画方式，可选fade,default
+                , full: false        //全屏
+                , autoplay: true     //自动切换
+                , interval: 1300     //自动切换的时间间隔
+                , index: 0          //初始化时item索引,默认时0
+                , indicator:'inside' //指示器位置，可选outside,none
+                ,loop: true, // 是否循环播放
+            });
+
+            carousel.on('change(carofilter)', function (obj) { //test1来源于对应HTML容器的 lay-filter="test1" 属性值
+                console.log(obj.index);     //当前条目的索引
+                console.log(obj.prevIndex); //上一个条目的索引
+                console.log(obj.item);      //当前条目的元素对象
+            });
+
+            ins.reload({arrow:'hover'});//将arror从alway变成hover
+        });
+    </script>
+</head>
+
+<body>
+<div>
+    <ul class="layui-nav" id="layui-nav">
+        <li class="layui-nav-item">
+            <a href="index.html">主页<span class="layui-badge-dot layui-bg-green"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="technology.html">江湖<span class="layui-badge-dot layui-bg-green"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="">旅行日志<span class="layui-badge-dot"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="">友链<span class="layui-badge-dot"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="selfResume.html">关于<span class="layui-badge-dot layui-bg-green"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="register.html">注册<span class="layui-badge">99+</span></a>
+        </li>
+    </ul>
+</div>
+
+<div class="slide-item-tablecell">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="slider-heading text-center"><h3 class="slider__title">Kevin, 知也无涯, 愿你也享受乐趣！</h3>
+                    <br/>
+                    <p class="ksd-product-desctext"><h4>Knowledge is infinite, and may you have fun, too！</h4></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="layui-border-green">
+<div id="layoutSidenav" class="ksd-product-desctext" style="margin-right: 160px">
+    <div id="layoutSidenav_nav"></div>
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid">
+                <h3 class="mt-4">学习路径</h3>
+                <br/>
+                <div class="layui-carousel" id="test1" lay-filter="carofilter" >
+                    <div carousel-item style="font-size:larger;width: 1230px;height: 260px">
+                        <div><img src="images/4.png"/></div>
+                        <div><img src="images/川轻化.png"/></div>
+                        <div><img src="images/8.png"/></div>
+                        <div><img src="images/6.png"/></div>
+                    </div>
+                </div>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item active">走进新世界, 愿保持对于知识的好奇心.</li>
+                </ol>
+
+                <div class="row">
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card bg-success text-white mb-4">
+                            <div class="card-body">数据结构与算法之美</div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <a class="small text-white stretched-link" href="#">持续更新中</a>
+                                <span>168w人学过</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card bg-warning text-white mb-4">
+                            <div class="card-body">左耳听风</div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <a class="small text-white stretched-link" href="#">持续更新中</a>
+                                <span>123W人学过</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card bg-success text-white mb-4">
+                            <div class="card-body">设计模式之美</div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <a class="small text-white stretched-link" href="#">持续更新中</a>
+                                <span>1264w人学过</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card layui-bg-cyan text-white mb-4">
+                            <div class="card-body">趣谈网络协议</div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <a class="small text-white stretched-link" href="#">持续更新中</a>
+                                <span>1123w人学过</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="layui-border-orange"/>
+                <br/>
+                <div class="row">
+                    <div class="col-xl-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-area mr-1"></i>
+                                <b>摆脱焦虑的3个方法</b>
+                            </div>
+                            <div class="card-body">
+                                <p><b>为什么会焦虑？</b></p>
+                                <p> 原因其实很简单，因为焦虑起着一个非常重要的作用，它可以让我们避免其他负面情绪，如悲伤、忧愁、绝望等等。
+                                    相比这些发自内心的负面情绪，焦虑更容易被人接受，并使人在认知和语言上处于一个更肤浅的空间。
+                                    简单来说就是，焦虑让人很不舒服，但是比其他发自内心的负面情绪感觉更好。
+                                    发表在《行为疗法》杂志上的一项研究认为，焦虑能起到缓冲作用，它会让焦虑者一直处于消极的状态，
+                                    当其他消极情绪来袭时，它会缩小必须跨越的情绪距离。</p>
+                                <br/>
+                                <p><b>如何应对焦虑？</b></p>
+                                <p> 1. 给自己设定"焦虑时间"</p>
+                                <p> 2. 尝试表现得自信和果断</p>
+                                <p> 3. 直接关注可能发生的最坏情况</p>
+
+                                使用本站的编辑器，您可以轻松实现在线修改 HTML，并查看实例运行结果。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-bar mr-1"></i>
+                                <b>为什么当代年轻人"过目就忘"？</b>
+                            </div>
+                            <div class="card-body">
+                                <p><b>为什么你的记忆力经常被放进回收站？</b></p>
+
+                                有人说，人生中记忆力的最高点永远停留在高考那一刻了。
+                                这虽然是一句玩笑话，但也说明，工作之后，记忆力的衰退是个不争的事实。
+                                有调查说，信息时代的记忆改变，社会竞争加大，不良生活方式和习惯都是造成职场人记忆力衰退的主要因素。
+                                <p>1. 记忆习惯的改变</p>
+                                <p>2. 加班熬夜压力大</p>
+                                <p>3. 生活方式单一</p>
+                                <br/>
+                                <p><b>怎样才能给大脑保鲜呢？</b></p>
+                                <p> 1. 间隔式练习，提升记忆效果</p>
+                                <p> 2. 学会用自己熟悉的方式进行二次加工</p>
+                                <p> 3. 保持良好的作息和习惯</p>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="layui-border-orange"/>
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <b>"向上管理"的7个最佳实践</b>
+                    </div>
+                    <div class="card-body" style="letter-spacing:1px">
+                        <div class="table-responsive">
+                            <p><b>1. 在"过量"和"不够"之间找到合理的平衡</b></p>
+                            <p>
+                                微表情，是一种持续时间极其短暂的面部表情。我曾经有一位老板，他的微表情告诉我，我去他办公室汇报工作的次数过于频繁。结果，我就及时停止了这种做法。然而，后来我又因为工作沟通的次数不够，再次被老板点名批评了。幸运的是，最后我在这两者之间找到了恰当的平衡点。</p>
+                            <p><br/>
+                                <b>2. 沟通交流方式一定要尽量保持简洁</b></p>
+                            <p>
+                                管理者的级别越高，其它级别的员工在沟通工作中，就越需要跟他们传达更简洁有用的信息。中高层管理者在面对海量信息时，必须要筛选大量信息，把注意力集中在最有用和最重要的内容上。他们不希望在已知信息的基础上，被海量杂乱信息所干扰。
+                            </p><br/>
+                            <p><b>3. 分享重要的好消息</b></p>
+                            <p>
+                                缺乏安全感的员工，总是倾向于跟上司分享所有的好消息。一个在时间管理方面有很大挑战的上层管理者，肯定不希望了解所有的好消息。对于一些不重要的好消息，你可以在沟通对话结束之际稍微提及。至于非常重要的好消息，那你就不应该有所犹豫，要在第一时间跟上司分享。
+                            </p> <br/>
+                            <p><b>4. 诚实谨慎地分享坏消息</b></p>
+                            <p>
+                                因此，在向老板分享坏消息之前，一定要仔细思考该说些什么内容，如何去表述这个坏消息，并提出可以采取的改善措施，从而将负面影响控制到最低。如果你隐藏或者扭曲重要的事实，只会导致上司对你的不信任。
+                            </p><br/>
+                            <p><b>5. 较劲一定要分清场合</b></p>
+                            <p>
+                                下属如果想要在某个问题上跟老板较劲的话，一定不要忘记“二八原则”。所谓二八原则，即如果老板出现错误，并且有关分歧不大的时候，在 80%
+                                的情况下，下属都应该尝试稍微将老板引向相反的方向。至于另外 20%
+                                的情况下，特别是涉及重大问题时，员工就应该在尊重老板的基础上，坚定不移地提出反对意见。当然，大家肯定都不希望经常出现这种情况。不过，一些具有严重法律或道德后果的事情则需要特别对待。在这些情况下，员工应该结合逻辑、证据和诚信等因素，尽可能全面坚定地予以回击。
+                            </p><br/>
+                            <p><b>6. 避免抱怨和批评其他员工</b></p>
+                            <p>
+                                在涉及某位管理者的冲突时，只有当下属在解决冲突过程中已经尝试过解决冲突的各种可行方案过后，才有必要让老板知道这一冲突问题。毕竟，这实际上也算是一种坏消息，员工或管理者应该想好如何跟老板分享这则信息。在这一过程中，要保持看待问题的客观性，把重点放在行为、问题或当下情况上，而不是某个人身上。
+                            </p><br/>
+                            <p><b>7. 归类整理所有重要信息</b></p>
+                            一定要把最重要的信息归类整理起来，务必要注明日期。信息整理可以通过传统的纸质形式归类整理，也可以通过电子文档的方式来整理。如果某个问题非常重要的话，最好打印一份，摆放在老板的办公室桌面。对于上层管理者而言，由于每天可能会接触过量的信息，因此，他们有可能会忘记这份文件，甚至可能会忘记关于这个问题相关的讨论。因此，在这种情况下，注明日期的已归档文件，就相当于是一份保险，有助于员工做好后续工作的跟进与落实。以上就是“向上管理”的
+                            7 个最佳实践，希望对你有所帮助。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <br/>
+    <div style="margin-right: 80px;width: 600px">
+        <br/>
+        <font class="layui-timeline-title" size="4"><b>极客视点</b></font>
+        <p></p><br/>
+        <ul class="layui-timeline">
+            <li class="layui-timeline-item">
+                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                <div class="layui-timeline-content layui-text">
+                    <h3 class="layui-timeline-title">2020年10月(24讲)</h3>
+                    <p><a href="">极客视点,和你说声再见,再见！</a></p>
+                    <p><a href="">摆脱焦虑的三个方法！</a></p>
+                    <p><a href="">为什么当代年轻人"过目就忘"？</a></p>
+                    <p><a href="">从员工到管理者,能力怎么升级？</a></p>
+                    <p><a href="">怎么做好计划管理</a></p>
+                </div>
+            </li>
+            <li class="layui-timeline-item">
+                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                <div class="layui-timeline-content layui-text">
+                    <h3 class="layui-timeline-title">2020年09月(90讲)</h3>
+                    <p><a href="">有效贴完的四个步骤</a></p>
+                    <p><a href="">加班、工资、休假的法律尝试, 你知道多少？</a></p>
+                    <p><a href="">这些职场低潮期的信号,你出现了吗？</a></p>
+                    <p><a href="">从员工到管理者,能力怎么升级？</a></p>
+                    <p><a href="">三种类型的职业定位, 面临不同的职业天花板</a></p>
+                </div>
+            </li>
+            <li class="layui-timeline-item">
+                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                <div class="layui-timeline-content layui-text">
+                    <h3 class="layui-timeline-title">2020年08月(93讲)</h3>
+                    <p><a href="">职场中这三件事,需要主动做</a></p>
+                    <p><a href="">认清这五点人性,管理就简单了</a></p>
+                    <p><a href="">如何看待中年危机？</a></p>
+                    <p><a href="">从员工到管理者,能力怎么升级？</a></p>
+                    <p><a href="">为什么你越想财务自由, 就越难财务自由？</a></p>
+                    <p><a href="">比坚持更难的,是懂得及时止损</a></p>
+                </div>
+            </li>
+            <li class="layui-timeline-item">
+                <i class="layui-icon layui-timeline-axis">&#xe63f;</i>
+                <div class="layui-timeline-content layui-text">
+                    <div class="layui-timeline-title">过去</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<footer class="py-4 bg-light footer-self ">
+    <a>关于我们</a>
+    <span class="pipe">|</span>
+    <a>联系我们</a>
+    <span class="pipe">|</span>
+    <a>法律声明</a></nav>
+    <p>Copyright &copy;2020 即使再小的帆也能远航！ <br>
+        <a>京ICP备 1000000号</a>
+    </p>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
